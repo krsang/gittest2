@@ -113,7 +113,7 @@ try:
         data, server_new_socket = sock.recvfrom(516)
         opcode = int.from_bytes(data[:2], 'big')
 
-        # initialize file_block here
+        # initialize file_block here.
         file_block = b''
 
         # check message type
