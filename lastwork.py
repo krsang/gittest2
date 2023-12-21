@@ -97,7 +97,7 @@ try:
             file = open(filename, 'xb')  # 'x' flag ensures that the file is created, raises FileExistsError if it already exists
             send_wrq(filename, mode, print_message=False)
             print(f"File '{filename}' created locally. Initiating transfer.")
-            file_found_before_transfer = True  # Set to True for 'put' operation,
+            file_found_before_transfer = True  # Set to True for 'put' operation
         else:
             raise FileExistsError(f"File '{filename}' already exists locally. Transfer aborted.")
 except FileNotFoundError as e:
