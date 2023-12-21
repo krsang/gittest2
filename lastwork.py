@@ -73,7 +73,7 @@ if operation == 'put':
 else:
     send_rrq(filename, mode, print_message=False)
 
-# Open a file with the same name to save data from the server
+# Open a file with the same name to save data from the server.
 file = None  # Initialize file to None
 expected_block_number = 1
 
